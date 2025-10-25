@@ -78,3 +78,6 @@ South Korea의 최근 자살률은 인구 10만명당 약 **28.3명**으로, 202
 
 ## 👩‍💻 Contributors
 해커톤 팀 **컬러링 무드 (Coloring Mood)**
+
+![홈화면](Simulator Screenshot - iPhone 16 - 2025-10-25 at 20.33.36.png)
+![통계](Simulator Screenshot - iPhone 16 - 2025-10-25 at 20.33.36.png)
