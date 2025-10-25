@@ -1,0 +1,50 @@
+#!/bin/bash
+# ===========================================
+# Flutter 바이브코딩 환경 설치 스크립트
+# ===========================================
+
+echo "==== Flutter 바이브코딩 환경 설치 시작 ===="
+
+# -----------------------------
+# 1. Node.js / npm 설치 확인
+# -----------------------------
+if ! command -v node &> /dev/null
+then
+    echo "Node.js가 설치되어 있지 않습니다. Homebrew로 설치합니다..."
+    brew install node
+else
+    echo "Node.js 이미 설치됨"
+fi
+
+# -----------------------------
+# 2. Firebase MCP 설치
+# -----------------------------
+if ! command -v firebase &> /dev/null
+then
+    echo "firebase-tools 설치 중..."
+    npm install -g firebase-tools@latest
+else
+    echo "firebase-tools 이미 설치됨"
+fi
+
+# -----------------------------
+# 3. Gemini CLI 설치
+# -----------------------------
+if ! command -v gemini &> /dev/null
+then
+    echo "Gemini CLI 설치 중..."
+    npm install -g @gemini/cli
+else
+    echo "Gemini CLI 이미 설치됨"
+fi
+
+# -----------------------------
+# 4. MCP 서버 구성 안내
+# -----------------------------
+echo "==== MCP 서버 구성 ===="
+echo "Dart MCP 서버는 Dart SDK 3.9+ 필요"
+echo "Gemini MCP 구성은 ~/.gemini/settings.json 참고"
+
+echo "==== 설치 완료 ===="
+:q
+
